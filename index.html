@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainbow Forestry | Professional Tree Planting Services Scotland</title>
-  <meta name="description" content="Rainbow Forestry - Independent tree planting contractor in Scotland. Commercial planting, restocking, beat-up, and native woodland creation with 12,000 daily stem capacity.">
-  <meta name="keywords" content="Rainbow Forestry, tree planting Scotland, forestry contractor Scotland, commercial restocking, beat up planting, woodland creation, high volume planting squad">
+  <title>Rainbow Forestry | HQ Saltcoats | Central Belt & Galloway Tree Planting</title>
+  <meta name="description" content="Rainbow Forestry - HQ in Saltcoats, providing contract tree planting across the Central Belt and Galloway. 12,000 daily stem capacity, FISA compliant.">
+  <meta name="keywords" content="Rainbow Forestry, tree planting Saltcoats, forestry contractor Central Belt, tree planting Galloway, commercial restocking Scotland, woodland creation">
 
-  <!-- Google Fonts: Space Grotesk (rugged, modern headlines) & Plus Jakarta Sans (clean, readable body) -->
+  <!-- Google Fonts: Space Grotesk (rugged headlines) & Plus Jakarta Sans (ultra-clean body text) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
@@ -34,15 +34,16 @@
               700: '#15803d',
               800: '#166534',
               900: '#14532d',
-              950: '#072e17', // Deep Caledonian Scots Pine Green
+              950: '#062814',
             },
             peat: {
               800: '#292524',
-              900: '#1c1917', // Dark Highland Peat
-              950: '#0f0e0d',
+              900: '#1c1917',
+              950: '#0c0a09',
             },
-            lichen: '#a3b18a',
-            amberwood: '#d97706',
+            night: '#080d09',
+            darkgreen: '#0d1810',
+            carddark: '#141e16',
           }
         }
       }
@@ -50,8 +51,9 @@
   </script>
 
   <style>
-    .hero-mask {
-      background: linear-gradient(180deg, rgba(7, 46, 23, 0.88) 0%, rgba(15, 23, 42, 0.82) 65%, rgba(15, 14, 13, 0.98) 100%);
+    /* Robust High-Contrast Dark Overlays: Ensures zero title-cloud glare and maximum readability */
+    .hero-dark-overlay {
+      background: linear-gradient(180deg, rgba(8, 13, 9, 0.92) 0%, rgba(13, 24, 16, 0.88) 50%, rgba(8, 13, 9, 0.98) 100%);
     }
     .text-balance {
       text-wrap: balance;
@@ -59,47 +61,46 @@
   </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-forest-600 selection:text-white">
+<body class="bg-night text-stone-200 antialiased selection:bg-emerald-600 selection:text-white">
 
   <!-- ========================================================================= -->
-  <!-- 1. STICKY TOP NAVIGATION BAR                                              -->
+  <!-- 1. STICKY TOP NAVIGATION BAR (WITH HQ SALTCOATS & SERVICE REGION)         -->
   <!-- ========================================================================= -->
-  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 bg-peat-900/95 backdrop-blur-md border-b border-stone-800 text-white transition-all duration-300 shadow-md">
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 bg-night/95 backdrop-blur-md border-b border-stone-800 text-white transition-all duration-300 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo / Company Name -->
-        <a href="#top" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-forest-400 rounded-lg p-1">
-          <div class="w-10 h-10 rounded-lg bg-forest-800 border border-forest-500/50 flex items-center justify-center text-forest-300 group-hover:bg-forest-600 group-hover:text-white transition-colors duration-200 shadow-inner">
+        <!-- Logo / Brand Identity -->
+        <a href="#top" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-lg p-1">
+          <div class="w-11 h-11 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-200 shadow-inner">
             <!-- Scottish Conifer Emblem -->
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2L4 12h3.5L3 17h6v5h6v-5h6l-4.5-5H20L12 2z"/>
             </svg>
           </div>
           <div>
-            <span class="block text-lg font-bold font-display tracking-tight text-white group-hover:text-forest-400 transition-colors">
+            <span class="block text-xl font-bold font-display tracking-tight text-white group-hover:text-emerald-400 transition-colors">
               RAINBOW FORESTRY
             </span>
-            <span class="block text-xs uppercase tracking-widest text-forest-400 font-semibold">
-              Contractor • Scotland
+            <span class="block text-xs uppercase tracking-widest text-emerald-400 font-bold">
+              HQ Saltcoats • Central Belt & Galloway
             </span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-stone-300">
-          <a href="#services" class="hover:text-white hover:text-forest-400 transition-colors py-1">Services</a>
-          <a href="#experience" class="hover:text-white hover:text-forest-400 transition-colors py-1">Experience & Output</a>
-          <a href="#certifications" class="hover:text-white hover:text-forest-400 transition-colors py-1">Certifications</a>
-          <a href="#gallery" class="hover:text-white hover:text-forest-400 transition-colors py-1">Field Photos</a>
-          <a href="#contact" class="hover:text-white hover:text-forest-400 transition-colors py-1">Contact</a>
+          <a href="#services" class="hover:text-emerald-400 transition-colors py-1">Services</a>
+          <a href="#experience" class="hover:text-emerald-400 transition-colors py-1">Experience (12,000/day)</a>
+          <a href="#certifications" class="hover:text-emerald-400 transition-colors py-1">Safety Tickets</a>
+          <a href="#gallery" class="hover:text-emerald-400 transition-colors py-1">Field Photos</a>
+          <a href="#contact" class="hover:text-emerald-400 transition-colors py-1">Contact</a>
         </nav>
 
-        <!-- Right Quick Contact Badges -->
+        <!-- Right Quick Action Badges -->
         <div class="hidden sm:flex items-center gap-3">
           <!-- WhatsApp Quick Action -->
-          <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-600 px-3.5 py-2 rounded-lg border border-emerald-500/50 transition-all shadow-sm">
-            <!-- WhatsApp Icon -->
+          <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-600 px-3.5 py-2.5 rounded-xl border border-emerald-500/50 transition-all shadow-md">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
@@ -107,21 +108,16 @@
           </a>
 
           <!-- Direct Call -->
-          <a href="tel:07950142964" class="inline-flex items-center gap-2 text-xs font-bold text-stone-200 hover:text-white bg-stone-800 px-3.5 py-2 rounded-lg border border-stone-700 transition-colors">
-            <svg class="w-4 h-4 text-forest-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <a href="tel:07950142964" class="inline-flex items-center gap-2 text-xs font-bold text-stone-200 hover:text-white bg-stone-900 px-3.5 py-2.5 rounded-xl border border-stone-700 transition-colors">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
             <span>07950142964</span>
           </a>
-
-          <!-- Direct Contact Button -->
-          <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-xs font-bold text-white bg-forest-600 hover:bg-forest-500 active:bg-forest-700 transition-all shadow-md shadow-forest-950/60">
-            Contact
-          </a>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="menu-btn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg text-stone-300 hover:text-white hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-forest-400">
+        <button id="menu-btn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2.5 rounded-xl text-stone-300 hover:text-white hover:bg-stone-900 border border-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-400">
           <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -134,21 +130,25 @@
     </div>
 
     <!-- Mobile Navigation Dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden bg-peat-950 border-b border-stone-800 px-6 py-6 space-y-4 shadow-2xl">
-      <a href="#services" class="mobile-link block text-base font-medium text-stone-200 hover:text-forest-400">Services</a>
-      <a href="#experience" class="mobile-link block text-base font-medium text-stone-200 hover:text-forest-400">Experience & Output (12,000/day)</a>
-      <a href="#certifications" class="mobile-link block text-base font-medium text-stone-200 hover:text-forest-400">Safety & Certifications</a>
-      <a href="#gallery" class="mobile-link block text-base font-medium text-stone-200 hover:text-forest-400">Field Photography</a>
-      <a href="#contact" class="mobile-link block text-base font-medium text-stone-200 hover:text-forest-400">Contact & Inquiries</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-stone-950 border-b border-stone-800 px-6 py-6 space-y-4 shadow-2xl">
+      <div class="pb-3 border-b border-stone-800">
+        <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold block">Location & Region</span>
+        <span class="text-sm text-stone-200 font-semibold block mt-0.5">HQ: Saltcoats | Central Belt & Galloway</span>
+      </div>
+      <a href="#services" class="mobile-link block text-base font-semibold text-stone-200 hover:text-emerald-400">Services</a>
+      <a href="#experience" class="mobile-link block text-base font-semibold text-stone-200 hover:text-emerald-400">Experience & Output (12,000/day)</a>
+      <a href="#certifications" class="mobile-link block text-base font-semibold text-stone-200 hover:text-emerald-400">Safety Tickets & +F</a>
+      <a href="#gallery" class="mobile-link block text-base font-semibold text-stone-200 hover:text-emerald-400">Field Photography</a>
+      <a href="#contact" class="mobile-link block text-base font-semibold text-stone-200 hover:text-emerald-400">Contact Alexander</a>
       
       <div class="pt-4 border-t border-stone-800 space-y-3">
-        <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500">
+        <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500">
           Chat on WhatsApp (07950142964)
         </a>
-        <a href="tel:07950142964" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-semibold text-stone-300 bg-stone-800">
+        <a href="tel:07950142964" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-sm font-semibold text-stone-300 bg-stone-900 border border-stone-800">
           Call 07950142964
         </a>
-        <a href="mailto:alexanderahinz@gmail.com" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-semibold text-stone-300 bg-stone-800">
+        <a href="mailto:alexanderahinz@gmail.com" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-sm font-semibold text-stone-300 bg-stone-900 border border-stone-800">
           alexanderahinz@gmail.com
         </a>
       </div>
@@ -158,46 +158,46 @@
   <main id="top" class="pt-20">
 
     <!-- ========================================================================= -->
-    <!-- 2. HERO SECTION                                                           -->
+    <!-- 2. HERO SECTION (HQ SALTCOATS & SERVICE REGION AT THE VERY BEGINNING)      -->
     <!-- ========================================================================= -->
-    <section class="relative min-h-[90vh] flex items-center justify-center bg-peat-950 overflow-hidden">
+    <section class="relative min-h-[92vh] flex items-center justify-center bg-night overflow-hidden border-b border-stone-800">
       
-      <!-- Background Image with Dark Contrast Overlay -->
+      <!-- Background Image with Heavy Dark Shield: Prevents white sky washout -->
       <div class="absolute inset-0 z-0">
         <img 
           src="pictures/Mounding.jpg" 
           alt="Tree planting in Scotland across tough terrain and continuous mounding" 
-          class="w-full h-full object-cover object-center filter brightness-[0.70] contrast-[1.12]"
+          class="w-full h-full object-cover object-center filter brightness-[0.55] contrast-[1.15]"
           loading="eager"
         >
-        <div class="absolute inset-0 hero-mask"></div>
+        <div class="absolute inset-0 hero-dark-overlay"></div>
       </div>
 
-      <!-- Hero Main Content -->
+      <!-- Hero Main Content (Maximum Contrast) -->
       <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 text-center">
         
-        <!-- Region & Status Ribbon -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-forest-950/90 border border-forest-500/40 text-forest-300 text-xs sm:text-sm font-semibold mb-8 backdrop-blur-md shadow-lg">
-          <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Rainbow Forestry • Scottish Forestry Contractors</span>
-          <span class="text-stone-500 hidden sm:inline">|</span>
-          <span class="text-stone-200 hidden sm:inline">12,000 Trees / Day Average Daily Output</span>
+        <!-- ==================== LOCATION & REGION RIGHT AT THE BEGINNING ==================== -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-emerald-950/90 border-2 border-emerald-500/60 text-emerald-300 text-sm sm:text-base font-extrabold mb-8 shadow-2xl backdrop-blur-md">
+          <span class="inline-block w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>📍 HQ: SALTCOATS</span>
+          <span class="text-emerald-500 font-bold">•</span>
+          <span class="text-white">SERVICE REGION: CENTRAL BELT & GALLOWAY</span>
         </div>
 
-        <!-- Headline -->
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display text-white tracking-tight leading-[1.1] mb-6 text-balance drop-shadow-md">
+        <!-- Main Headline -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display text-white tracking-tight leading-[1.1] mb-6 text-balance drop-shadow-2xl">
           Professional Tree Planting Services
         </h1>
 
         <!-- Subheadline -->
-        <p class="max-w-3xl mx-auto text-lg sm:text-xl lg:text-2xl text-stone-200 font-normal leading-relaxed mb-10 text-balance drop-shadow">
-          Executing demanding forestry projects across tough Scottish terrains — delivering an average daily output of 12,000 stems with strict FISA safety compliance and unyielding all-weather resilience.
+        <p class="max-w-3xl mx-auto text-lg sm:text-xl lg:text-2xl text-stone-200 font-medium leading-relaxed mb-10 text-balance drop-shadow-md">
+          Headquartered in Saltcoats, Rainbow Forestry executes demanding manual tree planting contracts across the Central Belt and Galloway — delivering an average daily output of 12,000 stems with strict FISA safety standards.
         </p>
 
         <!-- Call to Action Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
           <!-- WhatsApp Primary CTA -->
-          <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 transition-all duration-200 shadow-xl shadow-emerald-950/60 transform hover:-translate-y-0.5">
+          <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 transition-all duration-200 shadow-xl shadow-emerald-950/80 transform hover:-translate-y-0.5 border border-emerald-400/30">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
@@ -205,23 +205,43 @@
           </a>
 
           <!-- Call CTA -->
-          <a href="tel:07950142964" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white bg-forest-700 hover:bg-forest-600 transition-all duration-200 shadow-xl shadow-forest-950/70">
-            <svg class="w-5 h-5 text-forest-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <a href="tel:07950142964" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white bg-stone-900 hover:bg-stone-800 border border-stone-700 transition-all duration-200 shadow-xl shadow-stone-950/80">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
             <span>Call 07950142964</span>
           </a>
 
-          <!-- View Services CTA -->
-          <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white bg-stone-900/80 hover:bg-stone-800 border border-stone-600 hover:border-stone-400 transition-all duration-200 backdrop-blur-md">
-            <span>Our Services</span>
+          <!-- Explore Services CTA -->
+          <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-stone-200 hover:text-white bg-emerald-950/70 hover:bg-emerald-900 border border-emerald-500/40 transition-all duration-200">
+            <span>View Services</span>
           </a>
         </div>
 
-        <!-- Hero Highlights Strip -->
-        <div class="mt-16 pt-8 border-t border-stone-700/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left max-w-4xl mx-auto">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-lg bg-forest-900/80 border border-forest-500/40 flex items-center justify-center text-forest-300 shrink-0">
+        <!-- Hero Highlights Strip (Solid Dark Cards) -->
+        <div class="mt-16 pt-8 border-t border-stone-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left max-w-4xl mx-auto">
+          <div class="bg-carddark/90 p-3.5 rounded-xl border border-stone-800 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="text-white text-sm font-bold">Saltcoats HQ</div>
+              <div class="text-stone-400 text-xs">North Ayrshire base</div>
+            </div>
+          </div>
+
+          <div class="bg-carddark/90 p-3.5 rounded-xl border border-stone-800 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <div>
+              <div class="text-white text-sm font-bold">Central & Galloway</div>
+              <div class="text-stone-400 text-xs">Primary service area</div>
+            </div>
+          </div>
+
+          <div class="bg-carddark/90 p-3.5 rounded-xl border border-stone-800 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
             </div>
             <div>
@@ -230,33 +250,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-lg bg-forest-900/80 border border-forest-500/40 flex items-center justify-center text-forest-300 shrink-0">
+          <div class="bg-carddark/90 p-3.5 rounded-xl border border-stone-800 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
             </div>
             <div>
               <div class="text-white text-sm font-bold">FISA & +F Certified</div>
               <div class="text-stone-400 text-xs">Full safety compliance</div>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-lg bg-forest-900/80 border border-forest-500/40 flex items-center justify-center text-forest-300 shrink-0">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            </div>
-            <div>
-              <div class="text-white text-sm font-bold">Pure Hand Planting</div>
-              <div class="text-stone-400 text-xs">Manual planting contracts</div>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-lg bg-forest-900/80 border border-forest-500/40 flex items-center justify-center text-forest-300 shrink-0">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            </div>
-            <div>
-              <div class="text-white text-sm font-bold">Remote 4x4 Rig</div>
-              <div class="text-stone-400 text-xs">Access to isolated hills</div>
             </div>
           </div>
         </div>
@@ -265,64 +265,64 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. SERVICES SECTION                                                       -->
+    <!-- 3. SERVICES SECTION (DEEP DARK HIGH-CONTRAST PALETTE - NO WHITE BG)       -->
     <!-- ========================================================================= -->
-    <section id="services" class="py-24 bg-white border-b border-slate-200">
+    <section id="services" class="py-24 bg-darkgreen border-b border-stone-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Section Title -->
+        <!-- Section Title (Pure Crisp White on Dark) -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase tracking-wider mb-3">
-            Core Contract Capabilities
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-extrabold uppercase tracking-wider mb-3">
+            Core Forestry Capabilities
           </div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-slate-900 tracking-tight mb-4">
-            Specialist Forestry Services
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white tracking-tight mb-4">
+            Specialist Tree Planting Services
           </h2>
-          <p class="text-lg text-slate-600 leading-relaxed">
-            Delivering dedicated hand tree planting for commercial forestry companies, private estates, and woodland investors across Scotland. Every compartment planted to strict stocking density and inspected quality.
+          <p class="text-lg text-stone-300 leading-relaxed">
+            Delivering dedicated manual hand planting for commercial woodland owners, management companies, and private estates across the Central Belt and Galloway.
           </p>
         </div>
 
-        <!-- 4-Column Services Grid -->
+        <!-- 4-Column Services Grid (High-Contrast Dark Cards) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
           <!-- 1. Commercial Planting -->
-          <article class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-forest-600 hover:shadow-xl transition-all duration-300 flex flex-col">
-            <div class="relative h-52 overflow-hidden bg-slate-200">
+          <article class="group bg-carddark rounded-2xl overflow-hidden border border-stone-800 hover:border-emerald-500 hover:shadow-2xl transition-all duration-300 flex flex-col">
+            <div class="relative h-52 overflow-hidden bg-stone-900">
               <img 
                 src="pictures/Mounding.jpg" 
                 alt="Commercial mounding forestry planting in Scotland" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute top-3 left-3 bg-forest-900/90 text-forest-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-forest-500/30">
+              <div class="absolute top-3 left-3 bg-stone-950/90 text-emerald-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-emerald-500/40">
                 High-Volume Squad
               </div>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-forest-700 transition-colors">
+                <h3 class="text-xl font-bold font-display text-white mb-2 group-hover:text-emerald-400 transition-colors">
                   Commercial Planting
                 </h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <p class="text-sm text-stone-300 leading-relaxed mb-4">
                   High-tempo manual planting on prepared ground, including continuous mounding, inverted mounds, ploughed ridges, and scarified ground.
                 </p>
-                <ul class="text-xs font-medium text-slate-700 space-y-2 mb-6">
+                <ul class="text-xs font-medium text-stone-300 space-y-2.5 mb-6">
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Sitka Spruce, Scots Pine, Larch & Douglas Fir
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Strict adherence to target spacing (e.g. 2,500/ha)
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Firm root-collar heel, zero J-rooting
                   </li>
                 </ul>
               </div>
-              <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-forest-700">
+              <div class="pt-4 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-emerald-400">
                 <span>Output: 12,000/day</span>
                 <span>Type: Production</span>
               </div>
@@ -330,42 +330,42 @@
           </article>
 
           <!-- 2. Restocking -->
-          <article class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-forest-600 hover:shadow-xl transition-all duration-300 flex flex-col">
-            <div class="relative h-52 overflow-hidden bg-slate-200">
+          <article class="group bg-carddark rounded-2xl overflow-hidden border border-stone-800 hover:border-emerald-500 hover:shadow-2xl transition-all duration-300 flex flex-col">
+            <div class="relative h-52 overflow-hidden bg-stone-900">
               <img 
                 src="pictures/team 2.jpg" 
                 alt="Clearfell restocking squad navigating brash mats" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute top-3 left-3 bg-forest-900/90 text-forest-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-forest-500/30">
+              <div class="absolute top-3 left-3 bg-stone-950/90 text-emerald-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-emerald-500/40">
                 Clearfell Restock
               </div>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-forest-700 transition-colors">
+                <h3 class="text-xl font-bold font-display text-white mb-2 group-hover:text-emerald-400 transition-colors">
                   Restocking Contracts
                 </h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <p class="text-sm text-stone-300 leading-relaxed mb-4">
                   Replanting clearfell compartments with heavy brash mats, high stump density, and vegetation regrowth. Thorough manual screefing where required.
                 </p>
-                <ul class="text-xs font-medium text-slate-700 space-y-2 mb-6">
+                <ul class="text-xs font-medium text-stone-300 space-y-2.5 mb-6">
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Heavy brash and slash navigation
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Hylobius (pine weevil) defense awareness
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Consistent spacing despite ground obstacles
                   </li>
                 </ul>
               </div>
-              <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-forest-700">
+              <div class="pt-4 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-emerald-400">
                 <span>Terrain: Heavy Brash</span>
                 <span>Stock: Bare-root / Cell</span>
               </div>
@@ -373,42 +373,42 @@
           </article>
 
           <!-- 3. Beat-up -->
-          <article class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-forest-600 hover:shadow-xl transition-all duration-300 flex flex-col">
-            <div class="relative h-52 overflow-hidden bg-slate-200">
+          <article class="group bg-carddark rounded-2xl overflow-hidden border border-stone-800 hover:border-emerald-500 hover:shadow-2xl transition-all duration-300 flex flex-col">
+            <div class="relative h-52 overflow-hidden bg-stone-900">
               <img 
                 src="pictures/Solo.jpeg" 
                 alt="Forestry contractor carrying planting bags for beat-up" 
                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute top-3 left-3 bg-forest-900/90 text-forest-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-forest-500/30">
+              <div class="absolute top-3 left-3 bg-stone-950/90 text-emerald-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-emerald-500/40">
                 Infilling
               </div>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-forest-700 transition-colors">
+                <h3 class="text-xl font-bold font-display text-white mb-2 group-hover:text-emerald-400 transition-colors">
                   Beat-up (Infilling)
                 </h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <p class="text-sm text-stone-300 leading-relaxed mb-4">
                   Surveying and infilling failed or weather-damaged compartments back to required stocking quotas. Fast walking pace across established brush.
                 </p>
-                <ul class="text-xs font-medium text-slate-700 space-y-2 mb-6">
+                <ul class="text-xs font-medium text-stone-300 space-y-2.5 mb-6">
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Targeted infill of dead or damaged stock
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Rapid ground coverage across wide compartments
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Tube, spiral, cane and stake maintenance
                   </li>
                 </ul>
               </div>
-              <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-forest-700">
+              <div class="pt-4 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-emerald-400">
                 <span>Focus: Audit & Fill</span>
                 <span>Pace: High Mobility</span>
               </div>
@@ -416,42 +416,42 @@
           </article>
 
           <!-- 4. Woodland Creation -->
-          <article class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-forest-600 hover:shadow-xl transition-all duration-300 flex flex-col">
-            <div class="relative h-52 overflow-hidden bg-slate-200">
+          <article class="group bg-carddark rounded-2xl overflow-hidden border border-stone-800 hover:border-emerald-500 hover:shadow-2xl transition-all duration-300 flex flex-col">
+            <div class="relative h-52 overflow-hidden bg-stone-900">
               <img 
                 src="pictures/Flat planting.jpg" 
                 alt="Woodland creation planting on flat terrain" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute top-3 left-3 bg-forest-900/90 text-forest-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-forest-500/30">
+              <div class="absolute top-3 left-3 bg-stone-950/90 text-emerald-300 text-xs font-bold px-3 py-1 rounded-md backdrop-blur-sm border border-emerald-500/40">
                 Native Schemes
               </div>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-forest-700 transition-colors">
+                <h3 class="text-xl font-bold font-display text-white mb-2 group-hover:text-emerald-400 transition-colors">
                   Woodland Creation
                 </h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <p class="text-sm text-stone-300 leading-relaxed mb-4">
                   Establishing native broadleaf and mixed woodlands under Scottish Forestry Grant Schemes (FGS) and Woodland Carbon Code compliance standards.
                 </p>
-                <ul class="text-xs font-medium text-slate-700 space-y-2 mb-6">
+                <ul class="text-xs font-medium text-stone-300 space-y-2.5 mb-6">
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Oak, Birch, Rowan, Alder, Hazel & Scots Pine
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Ecological micro-siting to soil moisture & aspect
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-forest-600 shrink-0"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
                     Riparian buffer zones and deer fenced enclaves
                   </li>
                 </ul>
               </div>
-              <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-forest-700">
+              <div class="pt-4 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-emerald-400">
                 <span>Standard: FGS Grant</span>
                 <span>Type: Mixed Native</span>
               </div>
@@ -464,38 +464,35 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. EXPERIENCE & TOUGH WEATHER RESILIENCE                                   -->
+    <!-- 4. EXPERIENCE & SCALE (HQ SALTCOATS & 12,000 OUTPUT HIGHLIGHT)           -->
     <!-- ========================================================================= -->
-    <section id="experience" class="py-24 bg-peat-900 text-stone-100 relative overflow-hidden">
-      <!-- Ambient subtle background grid -->
-      <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#22c55e 1px, transparent 1px); background-size: 24px 24px;"></div>
-
+    <section id="experience" class="py-24 bg-night text-stone-100 relative overflow-hidden border-b border-stone-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           <!-- Narrative Column -->
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-900/80 border border-forest-500/40 text-forest-300 text-xs font-bold uppercase tracking-wider">
-              Track Record & Scale
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+              Saltcoats HQ • Contract Scale
             </div>
             
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white tracking-tight leading-tight">
               Tough Terrains. Harsh Weather. 12,000 Daily Trees.
             </h2>
             
-            <p class="text-lg text-stone-300 leading-relaxed">
-              Scottish forestry contracts test endurance like nowhere else. Rainbow Forestry operates in driving Scottish sleet, sub-zero hill winds, saturated peat bogs, and steep rocky ground with proven reliability.
+            <p class="text-lg text-stone-200 leading-relaxed">
+              Based out of Saltcoats in North Ayrshire, Rainbow Forestry is strategically positioned to serve planting sites throughout the <strong class="text-white">Central Belt</strong> and <strong class="text-white">Galloway</strong>.
             </p>
 
-            <p class="text-base text-stone-400 leading-relaxed">
-              We specialize purely in manual hand tree planting. Speed is balanced with uncompromised quality: every tree is planted at the correct root-collar depth, firmly packed, and straight, delivering high survival rates across all Scottish compartments.
+            <p class="text-base text-stone-300 leading-relaxed">
+              We specialize purely in manual hand tree planting. Speed is balanced with uncompromised quality: every tree is planted at the correct root-collar depth, firmly heeled in, and straight, delivering high survival rates that pass client inspections without difficulty.
             </p>
 
-            <!-- Metrics Counter Cards -->
+            <!-- Metrics Counter Cards (Crisp Dark Cards) -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
               
-              <div class="bg-stone-800/80 border border-stone-700 rounded-xl p-5 shadow-inner">
-                <div class="text-3xl sm:text-4xl font-extrabold font-display text-forest-400 mb-1">
+              <div class="bg-carddark border border-stone-800 rounded-xl p-5 shadow-lg">
+                <div class="text-3xl sm:text-4xl font-extrabold font-display text-emerald-400 mb-1">
                   12,000
                 </div>
                 <div class="text-xs uppercase tracking-wider text-stone-300 font-bold">
@@ -504,24 +501,24 @@
                 <p class="text-[11px] text-stone-400 mt-1">High-volume daily stems</p>
               </div>
 
-              <div class="bg-stone-800/80 border border-stone-700 rounded-xl p-5 shadow-inner">
-                <div class="text-3xl sm:text-4xl font-extrabold font-display text-forest-400 mb-1">
+              <div class="bg-carddark border border-stone-800 rounded-xl p-5 shadow-lg">
+                <div class="text-3xl sm:text-4xl font-extrabold font-display text-emerald-400 mb-1">
                   100%
                 </div>
                 <div class="text-xs uppercase tracking-wider text-stone-300 font-bold">
-                  All-Weather Ready
+                  Weather Ready
                 </div>
                 <p class="text-[11px] text-stone-400 mt-1">Winter gale & rain proven</p>
               </div>
 
-              <div class="bg-stone-800/80 border border-stone-700 rounded-xl p-5 col-span-2 sm:col-span-1 shadow-inner">
-                <div class="text-3xl sm:text-4xl font-extrabold font-display text-forest-400 mb-1">
+              <div class="bg-carddark border border-stone-800 rounded-xl p-5 col-span-2 sm:col-span-1 shadow-lg">
+                <div class="text-3xl sm:text-4xl font-extrabold font-display text-emerald-400 mb-1">
                   4x4
                 </div>
                 <div class="text-xs uppercase tracking-wider text-stone-300 font-bold">
-                  Remote Hill Access
+                  Hill Track Rig
                 </div>
-                <p class="text-[11px] text-stone-400 mt-1">Off-grid forestry tracks</p>
+                <p class="text-[11px] text-stone-400 mt-1">Off-grid forestry access</p>
               </div>
 
             </div>
@@ -529,29 +526,29 @@
             <!-- Bulleted Working Strengths -->
             <div class="space-y-3 pt-2">
               <div class="flex items-start gap-3">
-                <div class="w-6 h-6 rounded-full bg-forest-600/30 text-forest-400 flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <p class="text-sm text-stone-300">
-                  <strong class="text-white">Self-Reliant Contracting:</strong> Arriving with calibrated tree bags, sharp specialized planting spades, safety kits, and self-contained remote access.
+                <p class="text-sm text-stone-200">
+                  <strong class="text-white">Central Belt & Galloway Coverage:</strong> Rapid mobilization from Saltcoats across Ayrshire, Dumfries & Galloway, Lanarkshire, Lothians, and Stirling.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
-                <div class="w-6 h-6 rounded-full bg-forest-600/30 text-forest-400 flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <p class="text-sm text-stone-300">
+                <p class="text-sm text-stone-200">
+                  <strong class="text-white">Dedicated Manual Hand Planting:</strong> Focused entirely on professional manual planting execution without machinery complications.
+                </p>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-stone-200">
                   <strong class="text-white">Strict Quality Checks:</strong> Continuous monitoring of stem depth, upright positioning, correct spacing adherence, and zero taproot curl (J-rooting).
-                </p>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-6 h-6 rounded-full bg-forest-600/30 text-forest-400 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </div>
-                <p class="text-sm text-stone-300">
-                  <strong class="text-white">Dedicated Hand Planting:</strong> Focused entirely on professional manual planting execution without machinery complications.
                 </p>
               </div>
             </div>
@@ -562,32 +559,32 @@
           <div class="lg:col-span-5 space-y-6">
             
             <!-- Vehicle & Hill Access -->
-            <div class="relative rounded-2xl overflow-hidden border border-stone-700 shadow-2xl group">
+            <div class="relative rounded-2xl overflow-hidden border border-stone-800 shadow-2xl group">
               <img 
                 src="pictures/Car.jpg" 
                 alt="Off-road 4x4 forestry transport on remote hill track" 
                 class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4 text-white">
-                <div class="inline-block bg-forest-700 text-forest-100 text-[11px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
-                  Off-Grid Mobility
+                <div class="inline-block bg-emerald-900 text-emerald-200 text-[11px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
+                  Remote Access
                 </div>
                 <div class="text-base font-bold">4x4 Outfitted for Remote Scottish Hill Tracks</div>
-                <div class="text-xs text-stone-300">Direct access to isolated hill compartments across Scotland</div>
+                <div class="text-xs text-stone-300">Fast access to isolated compartments across Central Belt & Galloway</div>
               </div>
             </div>
 
             <!-- Squad Operations -->
-            <div class="relative rounded-2xl overflow-hidden border border-stone-700 shadow-2xl group">
+            <div class="relative rounded-2xl overflow-hidden border border-stone-800 shadow-2xl group">
               <img 
                 src="pictures/Team.jpg" 
                 alt="Planting squad working across steep Scottish hillside" 
                 class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer zoomable-img"
                 loading="lazy"
               >
-              <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4 text-white">
                 <div class="text-sm font-bold">12,000 Trees / Day Squad Output</div>
                 <div class="text-xs text-stone-300">High-volume daily quota delivered across rough contours</div>
@@ -601,57 +598,57 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. CERTIFICATIONS & SAFETY TICKETS                                        -->
+    <!-- 5. CERTIFICATIONS & SAFETY (NO WHITE BACKGROUND)                          -->
     <!-- ========================================================================= -->
-    <section id="certifications" class="py-24 bg-white border-b border-slate-200">
+    <section id="certifications" class="py-24 bg-darkgreen border-b border-stone-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase tracking-wider mb-3">
-            Tickets & Safety
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-3">
+            Safety & Accreditations
           </div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-slate-900 tracking-tight mb-4">
-            Forestry Safety & Operational Tickets
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white tracking-tight mb-4">
+            Certified Forestry Safety Tickets
           </h2>
-          <p class="text-lg text-slate-600 leading-relaxed">
-            Safety in the forest is essential. Operating with certified remote emergency first aid (+F), verified operational tickets, and strict adherence to FISA national standards.
+          <p class="text-lg text-stone-300 leading-relaxed">
+            Operating with certified remote emergency first aid (+F), verified operational tickets, and strict adherence to FISA national standards.
           </p>
         </div>
 
-        <!-- Badges & Tickets Grid (Focused, No PA6, No Insurance) -->
+        <!-- Badges & Tickets Grid (High-Contrast Dark Cards) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <!-- Badge 1: First Aid with Verified Course Image -->
-          <div class="bg-slate-50 rounded-2xl p-6 border-2 border-forest-500/40 shadow-md relative overflow-hidden flex flex-col justify-between">
-            <div class="absolute top-0 right-0 bg-forest-600 text-white text-[11px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
+          <div class="bg-carddark rounded-2xl p-6 border-2 border-emerald-500/50 shadow-xl relative overflow-hidden flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-emerald-700 text-white text-[11px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
               Mandatory +F
             </div>
             <div>
-              <div class="w-12 h-12 rounded-xl bg-forest-100 text-forest-700 flex items-center justify-center mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mb-4">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold font-display text-slate-900 mb-1">
+              <h3 class="text-xl font-bold font-display text-white mb-1">
                 Emergency First Aid at Work (+F)
               </h3>
-              <p class="text-xs font-semibold text-forest-700 uppercase tracking-wider mb-3">
+              <p class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-3">
                 Forestry Commission & FISA Compliant
               </p>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              <p class="text-sm text-stone-300 leading-relaxed mb-4">
                 Comprehensive remote-site first aid certification covering trauma, hypothermia, Lyme disease awareness, and emergency medical protocols in isolated hill terrain.
               </p>
               
-              <!-- First Aid Certification Snapshot from pictures folder -->
-              <div class="rounded-xl overflow-hidden border border-slate-200 bg-white p-2 shadow-inner">
+              <!-- First Aid Certification Snapshot -->
+              <div class="rounded-xl overflow-hidden border border-stone-700 bg-stone-900 p-2 shadow-inner">
                 <img 
                   src="pictures/First aid course.png" 
                   alt="Verified First Aid at Work Forestry (+F) Course Training" 
                   class="w-full h-36 object-contain rounded-lg cursor-pointer zoomable-img"
                   loading="lazy"
                 >
-                <div class="text-[11px] text-center text-slate-500 mt-1 font-semibold">
+                <div class="text-[11px] text-center text-stone-400 mt-1 font-semibold">
                   Verified First Aid Course (+F)
                 </div>
               </div>
@@ -659,63 +656,63 @@
           </div>
 
           <!-- Badge 2: PA1 Safe Use of Pesticides -->
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-forest-600 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="bg-carddark rounded-2xl p-6 border border-stone-800 hover:border-emerald-500 shadow-xl transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-slate-200 text-slate-800 flex items-center justify-center mb-4">
-                <svg class="w-7 h-7 text-forest-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mb-4">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold font-display text-slate-900 mb-1">
+              <h3 class="text-xl font-bold font-display text-white mb-1">
                 City & Guilds / NPTC PA1
               </h3>
-              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+              <p class="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">
                 Foundation Pesticide Safety
               </p>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              <p class="text-sm text-stone-300 leading-relaxed mb-4">
                 Statutory certification in the safe handling, transport, environmental regulation, and storage of plant protection products used on forest trees and planting stock.
               </p>
             </div>
-            <ul class="text-xs text-slate-600 space-y-2 pt-4 border-t border-slate-200">
+            <ul class="text-xs text-stone-300 space-y-2 pt-4 border-t border-stone-800">
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> Safe chemical storage & transport
+                <span class="text-emerald-400 font-bold">✓</span> Safe chemical storage & transport
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> Watercourse & buffer zone protection
+                <span class="text-emerald-400 font-bold">✓</span> Watercourse & buffer zone protection
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> Full PPE & COSHH protocols
+                <span class="text-emerald-400 font-bold">✓</span> Full PPE & COSHH protocols
               </li>
             </ul>
           </div>
 
           <!-- Badge 3: FISA Compliance & Biosecurity -->
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-forest-600 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="bg-carddark rounded-2xl p-6 border border-stone-800 hover:border-emerald-500 shadow-xl transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-slate-200 text-slate-800 flex items-center justify-center mb-4">
-                <svg class="w-7 h-7 text-forest-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mb-4">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold font-display text-slate-900 mb-1">
+              <h3 class="text-xl font-bold font-display text-white mb-1">
                 FISA Standards & Biosecurity
               </h3>
-              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+              <p class="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">
                 Forest Industry Safety Accord
               </p>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              <p class="text-sm text-stone-300 leading-relaxed mb-4">
                 Strict adherence to national FISA safety guidelines for manual tree planting, steep slope work, and thorough biosecurity wash-downs to protect Scottish forests against disease.
               </p>
             </div>
-            <ul class="text-xs text-slate-600 space-y-2 pt-4 border-t border-slate-200">
+            <ul class="text-xs text-stone-300 space-y-2 pt-4 border-t border-stone-800">
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> Daily dynamic risk assessments
+                <span class="text-emerald-400 font-bold">✓</span> Daily dynamic risk assessments
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> Full PPE: boots, hi-vis, eye shield
+                <span class="text-emerald-400 font-bold">✓</span> Full PPE: boots, hi-vis, eye shield
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-forest-600 font-bold">✓</span> 'Keep It Clean' biosecurity wash-down
+                <span class="text-emerald-400 font-bold">✓</span> 'Keep It Clean' biosecurity wash-down
               </li>
             </ul>
           </div>
@@ -726,112 +723,112 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. FIELD PHOTOGRAPHY GALLERY                                              -->
+    <!-- 6. FIELD PHOTOGRAPHY GALLERY (NO LIGHT GREY BG)                          -->
     <!-- ========================================================================= -->
-    <section id="gallery" class="py-24 bg-slate-100 border-b border-slate-200">
+    <section id="gallery" class="py-24 bg-night border-b border-stone-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-bold uppercase tracking-wider mb-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-3">
             On Site In Scotland
           </div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-slate-900 tracking-tight mb-4">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white tracking-tight mb-4">
             Field Operations & Terrain Gallery
           </h2>
-          <p class="text-lg text-slate-600 leading-relaxed">
+          <p class="text-lg text-stone-300 leading-relaxed">
             Real photography from working compartments across Scotland. Click any image to preview ground conditions and planting execution.
           </p>
         </div>
 
-        <!-- Gallery Grid -->
+        <!-- Gallery Grid (Pure Dark Frames) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <!-- Photo 1: Mounding -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/Mounding.jpg" 
               alt="Mounding preparation on Scottish hill compartment" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-bold font-display">Hillside Continuous Mounding</div>
+              <div class="text-sm font-bold font-display text-white">Hillside Continuous Mounding</div>
               <div class="text-xs text-stone-300">Target stocking alignment on prepared excavator mounds</div>
             </figcaption>
           </figure>
 
           <!-- Photo 2: Flat Planting -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/Flat planting.jpg" 
               alt="Flat ground woodland creation planting in open glen" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-display font-bold">Open Glen Woodland Creation</div>
+              <div class="text-sm font-display font-bold text-white">Open Glen Woodland Creation</div>
               <div class="text-xs text-stone-300">Mixed native broadleaf and Scots pine schemes</div>
             </figcaption>
           </figure>
 
           <!-- Photo 3: Solo Planter -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/Solo.jpeg" 
               alt="Independent contractor working across remote terrain" 
               class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-display font-bold">Independent Contracting</div>
+              <div class="text-sm font-display font-bold text-white">Independent Contracting</div>
               <div class="text-xs text-stone-300">Self-reliant bags, spade, and all-weather kit</div>
             </figcaption>
           </figure>
 
           <!-- Photo 4: 4x4 Rig -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/Car.jpg" 
               alt="Forestry 4x4 vehicle on rough forest track in Scotland" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-display font-bold">Remote Track Access</div>
+              <div class="text-sm font-display font-bold text-white">Remote Track Access</div>
               <div class="text-xs text-stone-300">Off-grid 4x4 transport carrying trees & equipment</div>
             </figcaption>
           </figure>
 
           <!-- Photo 5: Restock Squad -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/team 2.jpg" 
               alt="Restocking crew working on clearfell compartment" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-display font-bold">High-Capacity Hand Planting</div>
+              <div class="text-sm font-display font-bold text-white">High-Capacity Hand Planting</div>
               <div class="text-xs text-stone-300">12,000 daily stem quota delivered on schedule</div>
             </figcaption>
           </figure>
 
           <!-- Photo 6: Hillside Crew -->
-          <figure class="group relative rounded-2xl overflow-hidden shadow-md bg-stone-900 aspect-4/3 cursor-pointer">
+          <figure class="group relative rounded-2xl overflow-hidden shadow-xl bg-stone-900 border border-stone-800 aspect-4/3 cursor-pointer">
             <img 
               src="pictures/Team.jpg" 
               alt="High altitude planting block in Scottish conditions" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 zoomable-img"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             <figcaption class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
-              <div class="text-sm font-display font-bold">Hill Compartments</div>
+              <div class="text-sm font-display font-bold text-white">Hill Compartments</div>
               <div class="text-xs text-stone-300">Planting across rough Scottish weather and slopes</div>
             </figcaption>
           </figure>
@@ -844,7 +841,7 @@
     <!-- ========================================================================= -->
     <!-- 7. SERVICE REGION & EASY CONTACT                                          -->
     <!-- ========================================================================= -->
-    <section id="contact" class="py-24 bg-peat-950 text-white relative">
+    <section id="contact" class="py-24 bg-darkgreen text-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -852,62 +849,80 @@
           <!-- Left Column: Service Region & Direct Channels -->
           <div class="lg:col-span-5 space-y-8">
             <div>
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-900/80 border border-forest-500/40 text-forest-300 text-xs font-bold uppercase tracking-wider mb-4">
-                Rainbow Forestry
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-4">
+                HQ Saltcoats
               </div>
               <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white tracking-tight mb-4">
-                Get in Touch
+                Service Region & Contact
               </h2>
               <p class="text-stone-300 text-base leading-relaxed">
-                Contact Alexander directly via WhatsApp, mobile call, or email to discuss upcoming planting contracts, compartment availability, and scheduling.
+                Rainbow Forestry is based in <strong class="text-white">Saltcoats (North Ayrshire)</strong>, offering dedicated tree planting contracting across the <strong class="text-white">Central Belt and Galloway</strong>.
               </p>
             </div>
 
-            <!-- Direct Contact Actions (High Contrast & Clickable) -->
+            <!-- Regional Coverage Card -->
+            <div class="bg-carddark border border-stone-800 rounded-2xl p-6 space-y-3">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-400">
+                Primary Contract Territories:
+              </h3>
+              <div class="space-y-2 text-sm text-stone-200">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                  <span><strong class="text-white">Central Belt:</strong> Ayrshire, Glasgow, Lanarkshire, Stirlingshire, Lothians</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                  <span><strong class="text-white">Galloway:</strong> Dumfries & Galloway, Stewartry, Wigtownshire, South Ayrshire</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-400 pt-2 border-t border-stone-800">
+                *Mobile 4x4 rig equipped for remote on-site stays during multi-week planting runs.
+              </p>
+            </div>
+
+            <!-- Direct Contact Actions (High-Contrast Large Buttons) -->
             <div class="space-y-4">
               
               <!-- 1. WhatsApp Button -->
-              <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-emerald-700 hover:bg-emerald-600 border border-emerald-500 transition-all group shadow-lg shadow-emerald-950/50">
+              <a href="https://wa.me/447950142964" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-emerald-700 hover:bg-emerald-600 border border-emerald-500 transition-all group shadow-xl">
                 <div class="w-12 h-12 rounded-xl bg-emerald-800 text-white flex items-center justify-center shrink-0 border border-emerald-400/40">
                   <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                   </svg>
                 </div>
                 <div>
-                  <div class="text-xs uppercase tracking-wider text-emerald-200 font-bold">Fastest Response</div>
-                  <div class="text-lg font-bold text-white">
-                    Chat on WhatsApp
-                  </div>
+                  <div class="text-xs uppercase tracking-wider text-emerald-200 font-bold">Instant Chat</div>
+                  <div class="text-lg font-bold text-white">Chat on WhatsApp</div>
                   <div class="text-xs text-emerald-100">07950142964</div>
                 </div>
               </a>
 
               <!-- 2. Mobile Phone Call -->
-              <a href="tel:07950142964" class="flex items-center gap-4 p-4 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-stone-800 hover:border-forest-500 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-forest-900/60 text-forest-400 flex items-center justify-center shrink-0 border border-forest-500/30 group-hover:bg-forest-600 group-hover:text-white transition-colors">
+              <a href="tel:07950142964" class="flex items-center gap-4 p-4 rounded-2xl bg-carddark hover:bg-stone-900 border border-stone-800 hover:border-emerald-500 transition-all group">
+                <div class="w-12 h-12 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                   </svg>
                 </div>
                 <div>
-                  <div class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Mobile Call</div>
-                  <div class="text-lg font-bold text-white group-hover:text-forest-300 transition-colors">
+                  <div class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Direct Call</div>
+                  <div class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
                     07950142964
                   </div>
-                  <div class="text-xs text-stone-400">Alexander A. Hinz</div>
+                  <div class="text-xs text-stone-400">Alexander A. Hinz • Saltcoats HQ</div>
                 </div>
               </a>
 
               <!-- 3. Direct Email -->
-              <a href="mailto:alexanderahinz@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-stone-800 hover:border-forest-500 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-forest-900/60 text-forest-400 flex items-center justify-center shrink-0 border border-forest-500/30 group-hover:bg-forest-600 group-hover:text-white transition-colors">
+              <a href="mailto:alexanderahinz@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-carddark hover:bg-stone-900 border border-stone-800 hover:border-emerald-500 transition-all group">
+                <div class="w-12 h-12 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                   </svg>
                 </div>
                 <div>
-                  <div class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Email Address</div>
-                  <div class="text-base font-bold text-white group-hover:text-forest-300 transition-colors break-all">
+                  <div class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Direct Email</div>
+                  <div class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors break-all">
                     alexanderahinz@gmail.com
                   </div>
                 </div>
@@ -915,28 +930,18 @@
 
             </div>
 
-            <!-- Regional Coverage Summary -->
-            <div class="bg-stone-900/90 border border-stone-800 rounded-2xl p-6">
-              <h3 class="text-xs font-bold uppercase tracking-wider text-forest-400 mb-2">
-                Service Region:
-              </h3>
-              <p class="text-sm text-stone-300">
-                Operating throughout Scotland — Highlands, Argyll, Perthshire, Aberdeenshire, Scottish Borders & Central Belt. Equipped for remote stays on active compartments.
-              </p>
-            </div>
-
           </div>
 
-          <!-- Right Column: Simple & Easy Message Card -->
+          <!-- Right Column: Simple Easy Contact Form -->
           <div class="lg:col-span-7">
-            <div class="bg-stone-900 border border-stone-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+            <div class="bg-carddark border border-stone-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
               
               <div class="mb-6">
                 <h3 class="text-2xl sm:text-3xl font-extrabold font-display text-white mb-2">
                   Send a Quick Message
                 </h3>
-                <p class="text-stone-400 text-sm">
-                  No lengthy forms. Enter your name, contact, and planting details below to reach me instantly.
+                <p class="text-stone-300 text-sm">
+                  Quick and straightforward. Alexander responds directly regarding current contract capacity across the Central Belt and Galloway.
                 </p>
               </div>
 
@@ -944,35 +949,35 @@
               <form id="contact-form" class="space-y-5">
                 
                 <div>
-                  <label for="name" class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-2">Your Name *</label>
+                  <label for="name" class="block text-xs font-bold uppercase tracking-wider text-stone-200 mb-2">Your Name *</label>
                   <input 
                     type="text" 
                     id="name" 
                     required 
                     placeholder="e.g. John MacLeod" 
-                    class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-forest-500 text-sm"
+                    class="w-full bg-night border border-stone-700 rounded-xl px-4 py-3.5 text-white placeholder-stone-500 focus:outline-none focus:border-emerald-500 text-sm"
                   >
                 </div>
 
                 <div>
-                  <label for="contact-info" class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-2">Your Phone or Email *</label>
+                  <label for="contact-info" class="block text-xs font-bold uppercase tracking-wider text-stone-200 mb-2">Your Phone or Email *</label>
                   <input 
                     type="text" 
                     id="contact-info" 
                     required 
                     placeholder="e.g. 07123 456789 or manager@estate.co.uk" 
-                    class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-forest-500 text-sm"
+                    class="w-full bg-night border border-stone-700 rounded-xl px-4 py-3.5 text-white placeholder-stone-500 focus:outline-none focus:border-emerald-500 text-sm"
                   >
                 </div>
 
                 <div>
-                  <label for="message" class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-2">Message or Planting Details *</label>
+                  <label for="message" class="block text-xs font-bold uppercase tracking-wider text-stone-200 mb-2">Message or Planting Details *</label>
                   <textarea 
                     id="message" 
                     rows="4" 
                     required 
-                    placeholder="e.g. Need restock planting for 40,000 trees in Argyll starting November..." 
-                    class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-forest-500 text-sm"
+                    placeholder="e.g. Need restock planting in Galloway for 35,000 trees starting November..." 
+                    class="w-full bg-night border border-stone-700 rounded-xl px-4 py-3.5 text-white placeholder-stone-500 focus:outline-none focus:border-emerald-500 text-sm"
                   ></textarea>
                 </div>
 
@@ -981,7 +986,7 @@
                   <button 
                     type="submit" 
                     id="submit-email"
-                    class="flex-1 py-4 px-6 rounded-xl bg-forest-600 hover:bg-forest-500 font-bold text-sm text-white transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                    class="flex-1 py-4 px-6 rounded-xl bg-forest-700 hover:bg-forest-600 font-bold text-sm text-white transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer border border-emerald-500/30"
                   >
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -993,7 +998,7 @@
                   <button 
                     type="button" 
                     id="submit-whatsapp"
-                    class="flex-1 py-4 px-6 rounded-xl bg-emerald-700 hover:bg-emerald-600 font-bold text-sm text-white transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                    class="flex-1 py-4 px-6 rounded-xl bg-emerald-700 hover:bg-emerald-600 font-bold text-sm text-white transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer border border-emerald-400/40"
                   >
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
@@ -1002,7 +1007,7 @@
                   </button>
                 </div>
 
-                <p id="form-feedback" class="text-xs text-center text-forest-400 mt-2 hidden font-medium"></p>
+                <p id="form-feedback" class="text-xs text-center text-emerald-400 mt-2 hidden font-medium"></p>
 
               </form>
 
@@ -1016,18 +1021,18 @@
         <!-- ========================================================================= -->
         <footer class="mt-20 pt-10 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-stone-400">
           <div class="flex items-center gap-3">
-            <div class="w-6 h-6 rounded bg-forest-900 border border-forest-600/40 flex items-center justify-center text-forest-400">
+            <div class="w-6 h-6 rounded bg-emerald-950 border border-emerald-600/40 flex items-center justify-center text-emerald-400">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2L4 12h3.5L3 17h6v5h6v-5h6l-4.5-5H20L12 2z"/>
               </svg>
             </div>
-            <span>© <span id="current-year">2026</span> Rainbow Forestry. Independent Tree Planting Contractor, Scotland.</span>
+            <span>© <span id="current-year">2026</span> Rainbow Forestry. HQ Saltcoats • Serving Central Belt & Galloway.</span>
           </div>
 
           <div class="flex items-center gap-6 text-stone-400">
             <a href="mailto:alexanderahinz@gmail.com" class="hover:text-white transition-colors">alexanderahinz@gmail.com</a>
             <a href="tel:07950142964" class="hover:text-white transition-colors">07950142964</a>
-            <a href="#top" class="hover:text-forest-400 transition-colors flex items-center gap-1 font-semibold">
+            <a href="#top" class="hover:text-emerald-400 transition-colors flex items-center gap-1 font-semibold">
               <span>Back to Top</span>
               <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
@@ -1166,19 +1171,19 @@
           return;
         }
 
-        const subject = encodeURIComponent(`Tree Planting Inquiry - ${name} via Rainbow Forestry`);
+        const subject = encodeURIComponent(`Tree Planting Inquiry (Central Belt & Galloway) - ${name}`);
         const bodyLines = [
           `Hi Alexander,`,
           ``,
-          `I would like to inquire about a tree planting contract in Scotland.`,
+          `I would like to inquire about a tree planting contract in the Central Belt / Galloway area.`,
           ``,
           `Name: ${name}`,
           `Contact: ${contactInfo}`,
           ``,
-          `Details:`,
+          `Project Details:`,
           `${message}`,
           ``,
-          `Sent from rainbow forestry website.`
+          `Sent via Rainbow Forestry website.`
         ];
         const body = encodeURIComponent(bodyLines.join('\n'));
         const mailtoUrl = `mailto:alexanderahinz@gmail.com?subject=${subject}&body=${body}`;
@@ -1201,7 +1206,7 @@
           return;
         }
 
-        const text = `Hi Alexander, this is ${name} (${contactInfo || 'N/A'}). I'm contacting you regarding a tree planting project in Scotland: ${message}`;
+        const text = `Hi Alexander, this is ${name} (${contactInfo || 'N/A'}). I'm contacting Rainbow Forestry regarding a tree planting contract in the Central Belt / Galloway: ${message}`;
         const waUrl = `https://wa.me/447950142964?text=${encodeURIComponent(text)}`;
 
         if (formFeedback) {
@@ -1217,11 +1222,11 @@
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 20) {
-        navbar.classList.add('shadow-xl', 'bg-peat-950/98');
-        navbar.classList.remove('bg-peat-900/95');
+        navbar.classList.add('shadow-2xl', 'bg-night/98');
+        navbar.classList.remove('bg-night/95');
       } else {
-        navbar.classList.remove('shadow-xl', 'bg-peat-950/98');
-        navbar.classList.add('bg-peat-900/95');
+        navbar.classList.remove('shadow-2xl', 'bg-night/98');
+        navbar.classList.add('bg-night/95');
       }
     });
   </script>
