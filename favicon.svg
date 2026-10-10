@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062814"/>
+      <stop offset="100%" stop-color="#02140a"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.25" fill="none" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.85"/>
+  <path d="M16 6 L8 16 H11.5 L7 21 H13 V26 H19 V21 H25 L20.5 16 H24 L16 6 Z" fill="url(#treeGrad)"/>
+</svg>
